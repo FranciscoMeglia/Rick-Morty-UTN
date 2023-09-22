@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;900&display=swap');
+
+:root {
+    --verde: #b1f0dc ;
+    --azul: #344D67 ;
+}
+
+.character-card {
+    width: 320px;
+    height: 450px;
+    background-color:  var(--azul);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.character-card .picture {
+    width: 95%;
+    height: 67%;
+    margin: 10px auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.character-card button {
+    position: absolute;
+    height: 35px;
+    width: auto;
+    right: 5px;
+    bottom: 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--verde);
+    color: #344D67;
+}
+
+.character-card h2 {
+    margin: 0 10px;
+    color: var(--verde);
+}
+
+
+.character-card #close {
+    display: none;
+}
+
+/* OPEN */
+.character-card-open {
+    width: 655px;
+    height: 450px;
+    background-color:  var(--azul);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.character-card-open .picture {
+    width: 46%;
+    height: 67%;
+    margin: 9px 9px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.character-card-open button {
+    display: none;
+}
+
+.character-card-open #close {
+    display: block;
+    position: absolute;
+    right: 9px;
+    top: 11px;
+    background-color: var(--verde);
+    color: #344D67;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.character-card-open h2 {
+    margin: 0 10px;
+    color: var(--verde);
+}
+
+@media screen and (max-width: 655px) {
+    .character-card-open {
+        width: 320px;
+        height: 800px;
+    }
+
+    .character-card-open .picture {
+        width: 95%;
+        height: 44%;
+    }
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;900&display=swap');
+
+.characters {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url(../../../public/rickymorty.webp);
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+.characters .characters-container {
+    width: auto;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 100px;
+}
+
+/* FILTERS */
+.characters .filters {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.characters .filters .filter-title {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.characters .filters img{
+    width: 200px ;
+}
+.characters .filters .filter-title h3 {
+    color: #b1f0dc;
+}
+
+.characters .filters .filters-check  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+} 
+
+.characters .filters .filters-check-res  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 5px;
+} 
+
+/* FILTER MOBILE */
+.characters .filters img {
+    display: none;
+    width: 50px;
+    cursor: pointer;
+}
+
+.characters .filters i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #b1f0dc;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1007px) {
+
+    .characters .filters {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .characters .filters .filters-check {
+        display: none;
+    }
+
+    .characters .filter-title img {
+        display: flex;
+    }
+
+    .characters .filter-title {
+        background-color: #344D67;
+        height: 60px;
+        border-radius: 30px;
+    }
+
+    .characters .filter-title h3 {
+        margin-left: 20px;
+    }
+
+    .characters .filter-title img {
+        margin-right: 20px;
+    }
+}
+
+
+
+

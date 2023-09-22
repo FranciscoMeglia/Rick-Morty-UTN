@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;900&display=swap');
+
+:root {
+    --verde: #b1f0dc ;
+    --azul: #344D67 ;
+}
+
+.home {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../public/rickymorty.webp)
+}
+
+.home .card {
+    width: 600px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.home .card h1 {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 65px;
+}
+
+.home .card h2 {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 32px;
+    padding-top: 15px;
+}
+
+.home .card p {
+    font-size: 17px;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+.home .card h3 {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+.home .card .routes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.home .card .routes a {
+    background-color: var(--azul);
+    color: var(--verde);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.home .card .routes a:first-child {
+    padding: 17px 20px;
+}
+
+.home .card .routes a:last-child {
+    padding: 17px 32px;
+}
+
+.home .card .routes a:hover {
+    background-color: var(--verde) ;
+    color: var(--azul);
+}
+
+@media screen and (max-width: 800px) {
+    .home .card {
+        width: 90%;
+    }
+
+    .home .card h2 {
+        color: #7cbeaa;
+    }
+
+    .home .card h3 {
+        color: #7cbeaa;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .home .card h1 {
+        padding-top: 30px;
+    }
+
+    .home .card {
+        height: auto;
+    }
+
+    .home .card .routes {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .home .card h1 {
+        font-size: 30px;
+    }
+
+    .home .card h2 {
+        font-size: 23px;
+    }
+
+    .home .card h3 {
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,24 @@
+.error {
+    width: 85%;
+    height: auto;
+    min-height: 70px;
+    background-color: #344D67;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+
+.error i {
+    background-color: white;
+    border-radius: 100%;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.error p {
+    margin: 0 10px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    color: white;
+}

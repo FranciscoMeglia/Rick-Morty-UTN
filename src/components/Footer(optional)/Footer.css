@@ -1,0 +1,36 @@
+.footer {
+    width: 350px;
+    margin: 0 auto;
+    background-color: #344D67;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.footer p {
+    margin: 0;
+    color: #b1f0dc;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.footer .icons {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer .icons i {
+    font-size: 30px;
+    margin-left: 5px;
+    color: #b1f0dc;
+    transition: 0.2s;
+}
+
+.footer .icons i:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
