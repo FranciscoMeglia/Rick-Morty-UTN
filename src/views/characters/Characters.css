@@ -7,7 +7,7 @@
     background-image: url(../../../public/rickymorty.webp);
     overflow-x: hidden;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: contain;
 }
 
 .characters .characters-container {
